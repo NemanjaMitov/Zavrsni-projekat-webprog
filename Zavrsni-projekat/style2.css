@@ -1,0 +1,191 @@
+:root{
+  --clr-bl:rgb(20,20,20);
+  --clr-wh: #fff;
+  --clr-pri:rgb(255,54,45);
+  --clr-btn:#cd2d24;
+}
+
+.mesto{
+  height: 1000px;
+  width: 100%;
+}
+.naslov-upustvo{
+  font-size: 5.2rem;
+  color: var(--clr-pri);
+  text-align: center;
+  padding: 4.8rem;
+}
+.upustvo-opis{
+  font-size: 2.4rem;
+  line-height: 1.4;
+  text-align: center;
+}
+.upustvo-opis2{
+  font-size: 2.4rem;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 6.2rem;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: rgb(0, 0, 0);
+  gap: 1.8rem;
+  padding: 1.8rem;
+}
+.gallery-slika {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease-out;
+}
+.card {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.gallery-slika:hover{
+  background: rgba(0, 0, 0,0.3);
+}
+.slika-detalji {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px) brightness(1.3px);
+  padding: 0.5rem;
+  opacity: 0; /* Stavlja se opacity 0 da bi se na hover aktivirao na 1 sto znaci da se aktivira i efekat*/
+  transition: opacity 350ms;
+}
+
+.slika-detalji h2 {
+  text-align: center;
+  color: #f9fbff;
+  line-height: 1.5rem;
+  text-shadow: 0 0 20px #161d34, 0 0 5px #4f546c;
+  position: relative; /* Stavlja se position relative zajedno sa top kako bi se spustilo za odredjenu visinu i kasnije iskoristilo za animaciju*/
+  top: 1rem;
+  transition: top 350ms;
+}
+.slika-detalji:hover h2 {
+  top: 0; /* Stavlja se top:0; da bi se tekst animirao na gore*/
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.slika-detalji:hover {
+  opacity: 1;
+}
+
+
+
+@media (max-width: 160em) {
+  .monitor-div{
+    display: flex;
+    
+    margin: 8rem auto 0 auto;
+    width: 96rem;
+    height: 54rem;
+    border: 4rem solid var(--clr-bl);
+  }
+  .monitor-drzac-div{
+    margin: 0 auto;
+    width: 7rem;
+    height: 10rem;
+    background-color: var(--clr-bl);
+  }
+  .monitor-postolje-div{
+    margin: 0 auto;
+    width: 40rem;
+    height: 7rem;
+    background-color: var(--clr-bl);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -1%;
+    transform: translate(-50%);
+  }
+  .monitor{
+    position: relative;
+
+  }
+}
+.monitor-div{
+  display: flex;
+  
+  margin: 8rem auto 0 auto;
+  width: 90rem;
+  height: 50rem;
+  border: 4rem solid var(--clr-bl);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+}
+.monitar-pc{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.monitar-pc-tekst{
+  position: absolute;
+  top: 5.5rem;
+  left: 2rem;
+  color: white;
+}
+.monitar-chrome{
+  position: absolute;
+  top: 8.5rem;
+  left: 2rem;
+}
+.monitar-chrome-tekst{
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+  color: white;
+}
+.monitar-recycle{
+  position: absolute;
+ bottom: 4rem;
+ right: 2rem;
+}
+.monitar-recycle-tekst{
+  position: absolute;
+bottom: 2.5rem;
+  right: 1.5rem;
+  color: white;
+  
+}
+
+
+#slicka{
+  width: 100%;
+}
+.monitor-drzac-div{
+  margin: 0 auto;
+  width: 7rem;
+  height: 10rem;
+}
+.monitor-postolje-div{
+  margin: 0 auto;
+  width: 40rem;
+  height: 7rem;
+  background-color: var(--clr-bl);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -1%;
+  transform: translate(-50%);
+ 
+}
+.monitor{
+  position: relative;
+  margin-bottom: 4rem;
+}

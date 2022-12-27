@@ -1,0 +1,232 @@
+:root{
+  --clr-bl:rgb(20,20,20);
+  --clr-wh: #fff;
+  --clr-pri:rgb(255, 54, 45);
+  --clr-btn:#ff362d;
+}
+:root {
+  --primary: #FFCE00;
+  --secondary: #FE4880;
+  --dark: #212121;
+  --light: #F3F3F3;
+}
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+
+.countdown{
+  height: 100vh;
+ background-image: url(https://wallpapercave.com/wp/wp8005738.jpg);
+ background-size: cover;
+ position: relative;
+ z-index: -2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 4.2rem;
+}
+.countdown-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+
+}
+.sezona-naslov{
+  font-size: 6.4rem;
+  color: var(--clr-pri);
+  text-align: center;
+ padding-bottom: 2.4rem;
+
+}
+#demo {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 6rem 3rem;
+  letter-spacing: 0.05em;
+  font-size: 8rem;
+  z-index: 999;
+
+}
+.ram-demo{
+  border: 1px solid rgb(193, 186, 186);
+
+}
+.novi-animei{
+  font-size: 5.2rem;
+  color: var(--clr-wh);
+}
+
+
+.anime-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.2rem;
+  padding: 1.2rem;
+  background-color: rgb(210, 210, 210);
+}
+
+
+
+
+.card {
+  margin:5rem auto 0;
+  width: 30rem;
+  height: 40rem;
+  perspective: 1000px;
+}
+
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card__face--front {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+#kartica1 .card__face--front{
+  background-image: url(./images/vinlandsaga2.jpg);
+}
+#kartica2 .card__face--front{
+  background-image: url(./images/automata.jpg);
+}
+#kartica3 .card__face--front{
+  background-image: url(./images/suiri2.jpg);
+}
+#kartica4 .card__face--front{
+  background-image: url(./images/bsd4.jpg);
+}
+#kartica5 .card__face--front{
+  background-image: url(./images/otonari.jpg);
+}
+#kartica6 .card__face--front{
+  background-image: url(./images/trigun.jpg);
+}
+
+
+.card--front-naslov{
+  color: var(--clr-pri);
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 1.2rem auto;
+  align-self: center;
+  display: block;
+}
+.planned{
+  color: var(--clr-wh);
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: rgb(255, 54, 45,0.5);
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 1.2rem auto;
+  align-self: center;
+  display: block;
+}
+
+.card__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header {
+  position: relative;
+  padding: 1.875rem 1.875rem 2.5rem;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:var(--dark); 
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+.pp{
+  display: block;
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+  border-color: 5px solid #fff;
+  object-fit: cover;
+}
+.card__header h2{
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  
+}
+.card__body{
+  padding: 1.875em;
+}
+.card__body h3{
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.55em;
+  
+}
+.card__body p{
+  color: var(--dark);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

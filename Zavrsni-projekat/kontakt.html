@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;700;800&family=Bitter:ital,wght@0,400;0,600;0,700;1,500&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="kontakt.css">
+  <link rel="stylesheet" href="general.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+  <title>Pocetna</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-ram">
+      <p><a href="pocetna.html"  class="logo">Pocetna</a></p>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a href="stranica1.html" class="main-nav-item">Desktop Wallpaper</a></li>
+        <li><a href="animesezona.html" class="main-nav-item">Nova anime sezona</a></li>
+        <li><a href="kontakt.html" class="main-nav-item">Kontakt</a></li>
+        <li><a href="autor.html" class="main-nav-item">O autoru</a></li>
+
+      </ul>
+    </nav>
+    <div class="header-tekst"><span class="bold">I ovamo</span></div>
+  </header>
+  
+<div class="kontakt-background">
+<div class="kontakt-background-mask"></div>
+
+  <div class="kontakt">
+    <div class="kontakt-levo">
+      <h3 class="kontakt-levo-naslov">Kontaktirajte <br>nas</h3>
+      <p class="kontakt-letter" onclick="proveri()"><img src="./images/email.png"></p>
+      <p class="kontakt-levo-opis">Posalji poruku klikom na pismo</p>
+
+    </div>
+
+    <div class="kontakt-desno">
+      <div class="kontakt-korisnik">
+        <div class="korisnik-ime">
+          <label class="label-ime" for="ime">Ime</label>
+          <div><input type="text" class="input" id="ime"></Input></div>
+        </div>
+        
+        <div class="korisnik-ime">
+          <label class="label-ime" for="prezime">Prezime</label>
+        <div><input type="text" class="input" id="prezime"></Input></div>
+        </div>
+
+      </div>
+
+      <div class="korisnik-email" >
+        <label class="label-ime" for="email">Email</label>
+      <div><input type="email" class="input input-email" id="email"></Input></div>
+      </div>
+
+      <div class="korisnik-email">
+        <label class="label-ime">Poruka</label>
+      <div><textarea class="input input-poruka" id="poruka"></textarea></div>
+      </div>
+
+      <div class="potvrda"><input type="checkbox" class="checkbox" id="checkbox"><label class="label-ime">Potvrdite da zelite da posaljete poruku</label></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="cursor"></div>
+
+  <div class="footer">
+    <div class="footer-ram container">
+     <div class="ram-za-logo"><img src="./images/tsplogoWhite300x300.png" class="footer-logo"></div>
+      <div class="ucenik">
+        <h3>Tehnicka Skola Pirot</h3>
+        <p>Ucenik: Nemanja Mitov // Odeljenje III-1</p>
+      </div>
+      <div class="raspored">      
+        <p>
+            <b> <u>Radno vreme:</u> </b> <br>
+            Ponedeljak:     07:00-19:00 <br>
+            Utorak:    07:00-19:00 <br>
+            Sreda:    07:00-19:00 <br>
+            Cetvrtak:     07:00-19:00 <br>
+            Petak:     07:00-19:00 <br> 
+            Subota:     Zatvoreno <br>
+            Nedelja:     Zatvoreno <br>
+        </p>
+    </div>
+    </div>
+  </div>
+ <script src="kontakt.js"></script>
+</body>
+</html>
